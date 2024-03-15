@@ -1,14 +1,14 @@
 # Upload Files Client-Server
 
-This project consists of a **[`Node.js`](https://nodejs.org/en) server** and a **[`React`](https://react.dev/) client**, both implemented in [TypeScript](https://www.typescriptlang.org/). The server utilizes [Express.js](https://expressjs.com/) for handling API routes, [MySQL](https://www.mysql.com/) for database operations, and [Multer](https://www.npmjs.com/package/multer) for file uploads. 
-The client utilizes [`React`](https://react.dev/) for the front-end and [Axios](https://axios-http.com/) for making HTTP requests to the server. Additionally, [Tailwind CSS](https://tailwindcss.com/) is used for styling the client-side components.
+This project consists of a **[`Node.js`](https://nodejs.org/en) server** and a **[`React`](https://react.dev/) client**, both implemented in [TypeScript](https://www.typescriptlang.org/). The server utilizes [Express.js](https://expressjs.com/) for handling API routes, [MySQL](https://www.mysql.com/) for database operations, and [Multer](https://www.npmjs.com/package/multer) **or** [Socket.IO](https://socket.io/) for file uploads. 
+The client utilizes [`React`](https://react.dev/) for the front-end and [Axios](https://axios-http.com/) **or** [Socket.IO Client](https://www.npmjs.com/package/socket.io-client) for making HTTP requests to the server. Additionally, [Tailwind CSS](https://tailwindcss.com/) is used for styling the client-side components.
 
 ## Server
 
 ### Technologies Used
 - **Express.js**
 - **MySQL**
-- **Multer**
+- **Multer** / **Socket.IO**
 - **TypeScript**
 
 ### Server Features
@@ -35,7 +35,7 @@ MYSQL_PASSWORD=""
 
 ### Technologies Used
 - **React**
-- **Axios**
+- **Axios** / **Socket.IO**
 - **TypeScript**
 - **Tailwind CSS**
 
@@ -49,14 +49,19 @@ MYSQL_PASSWORD=""
 ## Getting Started
 
 1. Clone the repository: `git clone https://github.com/lfixas/Upload-Files-Client-Server.git`
-2. Navigate to the server directory: `cd server`
-3. Install dependencies: `npm install`
-4. Create a `.env` file and configure environment variables as described above.
-5. Start the server: `npm start`
-6. Open another terminal and navigate to the client directory: `cd ../client`
-7. Install dependencies: `npm install`
-8. Start the client: `npm start`
-9. Access the application in your browser at [http://localhost:3000](http://localhost:3000) (or another port if specified).
+2. Chose your prefered configuration between *Multer & Axios* or *Socket.IO*: `cd Multer` or `cd Socket.io`
+3. Navigate to the server directory: `cd server`
+4. Install dependencies: `npm install`
+5. Create a `.env` file and configure environment variables as described above.
+6. Start the server: `npm start`
+7. Open another terminal and navigate to the client directory: `cd ../client`
+8. Install dependencies: `npm install`
+9. Start the client: `npm start`
+10. Access the application in your browser at [http://localhost:3000](http://localhost:3000) (or another port if specified).
+
+### Multer & Axios OR Socket.io Configuration
+- If you prefer to use Multer for file uploads, you can navigate to the Multer directory: `cd Multer/`
+- If you prefer to use Socket.io, you can navigate to the Socket.io directory: `cd Socket.io/`
 
 ## Additional Notes
 - Make sure you have **Node.js** and **MySQL** installed on your system.

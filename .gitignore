@@ -1,29 +1,67 @@
+#* Multer
 # server
-/server/node_modules
-/server/.pnp
-/server/.pnp.js
-/server/.env
+/Multer/server/node_modules
+/Multer/server/.pnp
+/Multer/server/.pnp.js
+/Multer/server/.env
 
 # client
-/client/node_modules
-/client/.pnp
-/client/.pnp.js
-/client/.env
+/Multer/client/node_modules
+/Multer/client/.pnp
+/Multer/client/.pnp.js
+/Multer/client/.env
+
+# uploads
+/Multer/server/public/upload
 
 # testing
-/client/coverage
+/Multer/client/coverage
 
 # production
-/client/build
-/server/build
+/Multer/client/build
+/Multer/server/build
 
 # misc
-/client/.DS_Store
-/client/.env.local
-/client/.env.development.local
-/client/.env.test.local
-/client/.env.production.local
+/Multer/client/.DS_Store
+/Multer/client/.env.local
+/Multer/client/.env.development.local
+/Multer/client/.env.test.local
+/Multer/client/.env.production.local
 
-/client/npm-debug.log*
-/client/yarn-debug.log*
-/client/yarn-error.log*
+/Multer/client/npm-debug.log*
+/Multer/client/yarn-debug.log*
+/Multer/client/yarn-error.log*
+
+#* Socket.io
+# server
+/Socket.io/server/node_modules
+/Socket.io/server/.pnp
+/Socket.io/server/.pnp.js
+/Socket.io/server/.env
+
+# uploads
+/Socket.io/server/public/upload
+
+# client
+/Socket.io/client/node_modules
+/Socket.io/client/.pnp
+/Socket.io/client/.pnp.js
+/Socket.io/client/.env
+
+# testing
+/Socket.io/client/coverage
+
+# production
+/Socket.io/client/build
+/Socket.io/server/build
+
+# misc
+/Socket.io/client/.DS_Store
+/Socket.io/client/.env.local
+/Socket.io/client/.env.development.local
+/Socket.io/client/.env.test.local
+/Socket.io/client/.env.production.local
+
+/Socket.io/client/npm-debug.log*
+/Socket.io/client/yarn-debug.log*
+/Socket.io/client/yarn-error.log*
