@@ -11,6 +11,9 @@ The client utilizes [`React`](https://react.dev/) for the front-end and [Axios](
 - **Multer** / **Socket.IO**
 - **TypeScript**
 
+### Database Setup
+- **Database Table**: Before running the server, ensure you have a MySQL database set up. Create a table named `files` with a column named `name` (you can change these names in the code later, but for the current setup, this table structure is necessary).
+
 ### Server Features
 - **File Upload**: The server provides an endpoint (`/upload`) for uploading files. Uploaded files are stored in the `public/upload` directory with unique filenames generated using a custom function.
 - **Database Connection**: The server connects to a MySQL database using environment variables for configuration.
